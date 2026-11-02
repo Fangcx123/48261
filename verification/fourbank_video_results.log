@@ -1,0 +1,2 @@
+PASS fourbank video: actual 640x480 timing, blank preload ACK, first commit, complete frames, bank switch without mixing or underflow
+verification/tb_fourbank_video.v:59: $finish called at 67169680000 (1ps)

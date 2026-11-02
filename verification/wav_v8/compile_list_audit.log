@@ -1,0 +1,19 @@
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/audio/pcm_async_fifo.v
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/audio/wav_pcm_decoder.v
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/audio/fat32_wav_player.v
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/audio/pcm_fade_output.v
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/display/promax_audio_waveform.v
+HDMI1.4b_Transmitter_v1.0.al: ../user_source/hdl_source/display/audio_visualizer.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/pcm_async_fifo.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/wav_pcm_decoder.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/fat32_wav_player.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/pcm_fade_output.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/display/promax_audio_waveform.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/display/audio_visualizer.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/pcm_async_fifo.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/wav_pcm_decoder.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/fat32_wav_player.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/audio/pcm_fade_output.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/display/promax_audio_waveform.v
+HDMI1.4b_Transmitter_v1.0.prj: ../../../user_source/hdl_source/display/audio_visualizer.v
+PASS all six new files registered once in .al and both actual compilation projects; all listed files exist

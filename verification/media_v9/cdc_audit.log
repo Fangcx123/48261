@@ -1,0 +1,10 @@
+PASS u_wav/u_fifo/wgray: 13 physical register outputs retained
+PASS u_wav/u_fifo/rgray: 13 physical register outputs retained
+PASS u_wav/u_fifo/wgray_s1: 13 physical register outputs retained
+PASS u_wav/u_fifo/wgray_s2: 13 physical register outputs retained
+PASS u_wav/u_fifo/rgray_s1: 13 physical register outputs retained
+PASS u_wav/u_fifo/rgray_s2: 13 physical register outputs retained
+PASS no new false path/clock group exceptions; original three reset-only exclusions unchanged
+Related-clock cross-domain paths stay timed; this audit does not simulate analog metastability.
+PASS u_settings/req_sync: 3 physical register outputs retained, async_reg preserved
+PASS u_settings/ack_sync: 3 physical register outputs retained, async_reg preserved

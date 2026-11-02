@@ -1,0 +1,48 @@
+{
+  "wav_sha256": "2c36c4223fde62318c3306b2ad513846e894f0096aeef778bbfff45211e1332f",
+  "sample_rate": 48000,
+  "duration_seconds": 14.5045,
+  "timing_method": "aligned to the corresponding phrases in the verified v1 recording",
+  "cues": [
+    {
+      "start_sample": 0,
+      "end_sample": 120000,
+      "text": "欢迎使用工位四步通。"
+    },
+    {
+      "start_sample": 142560,
+      "end_sample": 272160,
+      "text": "四张图卡分别介绍准备、"
+    },
+    {
+      "start_sample": 272160,
+      "end_sample": 316800,
+      "text": "操作、"
+    },
+    {
+      "start_sample": 316800,
+      "end_sample": 355200,
+      "text": "对照、"
+    },
+    {
+      "start_sample": 355200,
+      "end_sample": 393600,
+      "text": "和收尾。"
+    },
+    {
+      "start_sample": 393600,
+      "end_sample": 477120,
+      "text": "开始操作前，"
+    },
+    {
+      "start_sample": 477120,
+      "end_sample": 581760,
+      "text": "请确认安全事项，"
+    },
+    {
+      "start_sample": 581760,
+      "end_sample": 696216,
+      "text": "并遵循教师指导。"
+    }
+  ]
+}

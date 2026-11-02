@@ -1,0 +1,15 @@
+INFO fourbank write bank 0 verified
+INFO fourbank write bank 1 verified
+INFO fourbank write bank 2 verified
+INFO fourbank write bank 3 verified
+INFO fourbank read bank 0 verified
+INFO fourbank read bank 1 verified
+INFO fourbank read bank 2 verified
+INFO fourbank read bank 3 verified
+PASS fourbank datapath: 640x480 four banks, real asynchronous FIFOs, RGB/vertical flip, 128-word bursts, video alignment, gapped returns
+PASS fourbank read timeout: missing SDRAM returns halt until reset
+PASS fourbank underflow: active video empty FIFO detected
+PASS fourbank write overflow: real FIFO fills while memory unavailable
+verification/tb_fourbank_datapath.v:116: $finish called at 135393620000 (1ps)
+PASS fourbank video: actual 640x480 timing, blank preload ACK, first commit, complete frames, bank switch without mixing or underflow
+verification/tb_fourbank_video.v:59: $finish called at 67169680000 (1ps)

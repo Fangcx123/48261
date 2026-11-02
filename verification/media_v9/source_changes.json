@@ -1,0 +1,77 @@
+[
+  {
+    "path": "src\\td_project_media_v9\\al_ip\\AUDIO_SAMPLE_ROM.v",
+    "old_sha256": null,
+    "new_sha256": "0bc4a18dfd8d598103faea82e9f02a85beaba5a3e21047a4e6baab063ca005bd"
+  },
+  {
+    "path": "src\\td_project_media_v9\\al_ip\\PLL.v",
+    "old_sha256": null,
+    "new_sha256": "4e873eef9499fa93508d8cf2cac90eea0e16c6f649ae29502cdc4c5886cd32aa"
+  },
+  {
+    "path": "src\\td_project_media_v9\\al_ip\\PLL_HDMI_AUDIO.v",
+    "old_sha256": null,
+    "new_sha256": "1e174c1dc4edbce9c61d6b390aca3b7b94022b60995a92981d5278247b7f5867"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\frame_commit_cdc.v",
+    "old_sha256": "d0dfa8c8367f2ebec27099f06c3e7f3e4f667384a6c546f36994db8d0a57bb6f",
+    "new_sha256": "c70f47363f10c7049682c86c406f3bdeec2408b273eb8db9c43734e2c096892e"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\top_tf_hdmi_audio.v",
+    "old_sha256": "683f61efdfdd80deda2d553ddd6f1c8e63415288c9c873f5a82d86d7457bb64f",
+    "new_sha256": "f227acf295c31c5954ac2f2a2e00f8dc77017ff1b8537c36cef3e92bf70d2ad5"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\audio\\pcm_fade_output.v",
+    "old_sha256": "38316a226cd10a6ae4508dc569f57725d6da379efb89992d661c9d24a6b718dd",
+    "new_sha256": "a0dd173c818bea53e4f5cd4b978cbdc6d6953ed6f279d8db566ffe3b3e86a27b"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\brightness_contrast_adjust.v",
+    "old_sha256": null,
+    "new_sha256": "865fe555493e96b8e16436400eadf3dfbc029eb10294c94836a17bb609637532"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\media_menu_overlay.v",
+    "old_sha256": null,
+    "new_sha256": "34309765fbb1b6c5c039d40eea4d83d9e33e37975d1abb02c243aad4306c5035"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\media_settings_cdc.v",
+    "old_sha256": null,
+    "new_sha256": "cc90573a916611f4ca601364577473c34471770567a5ed05b9141fdd91554cf2"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\thumbnail_cache.v",
+    "old_sha256": null,
+    "new_sha256": "35e74ed31bad6cd79b611928ebe5a0ba401218a4a550eb323f8d2da1a28fc15c"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\video_effects_pipeline.v",
+    "old_sha256": "6e67bd3d229497ed54fe0e903fd2224961dae4e40b714e5d4794311ca28f3849",
+    "new_sha256": "51d3652917788cd0524d480195255a66c04dc9baea9d6c0a29de23d8664d2741"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\bmp_nearest_scaler.v",
+    "old_sha256": null,
+    "new_sha256": "8b1b30bc0b2210d2ca9b1f45b65c39bc5ee6524b8281ff592a8e206f3803cd82"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\fat32_bmp_reader.v",
+    "old_sha256": "ce7f7864de54517c8721504b684a1b882bc78719563d8be7afea0c4106ca831c",
+    "new_sha256": "d44b96d7cbc1477a77947b8dad7f4e34d07bd8a0676f370084d10d6781302eb7"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\media_player_control.v",
+    "old_sha256": "5ddef7dae1aa54339abf67ebf7428e2e0a7b511dd9bfc8c529c42d0da4fbd4c8",
+    "new_sha256": "dd9219487b64281687a46ec98969fed49263f391cbf2fa8f8d26a02c76a6cb28"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\media_ui_controller.v",
+    "old_sha256": null,
+    "new_sha256": "30329b0ddb9c982e7ac92d77a64c980349b2b4a9681a4ec498d5ad0b8e8dbda0"
+  }
+]

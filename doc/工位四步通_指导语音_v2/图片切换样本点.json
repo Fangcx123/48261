@@ -1,0 +1,25 @@
+{
+  "sample_rate": 48000,
+  "events": [
+    {
+      "sample": 0,
+      "image": 0,
+      "keyword": "语音开始"
+    },
+    {
+      "sample": 272160,
+      "image": 1,
+      "keyword": "操作"
+    },
+    {
+      "sample": 316800,
+      "image": 2,
+      "keyword": "对照"
+    },
+    {
+      "sample": 355200,
+      "image": 3,
+      "keyword": "收尾"
+    }
+  ]
+}

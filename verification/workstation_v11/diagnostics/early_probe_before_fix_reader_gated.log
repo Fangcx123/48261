@@ -1,0 +1,40 @@
+controller init t=3146964000
+PIC1 loaded t=11850828000
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+frame 0 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+frame 1 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+frame 2 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+background bank 3 loaded t=67760244000 frames=3
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+frame 3 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+frame 4 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+preview done=1 error=0 t=103012044000 frames=5
+frame 5 bank 0: exact=0 ahead1=304800 other=2400 underflow_events=480
+  px n=127 (x=127 y=0) got=xxxxxx want=100080
+  px n=255 (x=255 y=0) got=xxxxxx want=100100
+  px n=383 (x=383 y=0) got=xxxxxx want=100180
+  px n=511 (x=511 y=0) got=xxxxxx want=100200
+SUMMARY underflow_flag=0 reader_error=0 loader_overflow=0 misaligned_groups=0 rd/wr_collisions=0 starts_during_busy=24 starts_during_refresh=24
+verification/workstation_v11/tb_system_ctrl.v:123: $finish called at 134689100000 (1ps)

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "PIC1.BMP",
+    "width": 640,
+    "height": 480,
+    "bits": 24,
+    "compression": 0,
+    "pixel_offset": 54,
+    "bytes": 921654,
+    "orientation": "bottom-up",
+    "sha256": "b956f61e3a59d54e7caa974fb823614eea77e8259cf0d4367a6b3c645e0b7a8c"
+  },
+  {
+    "file": "PIC2.BMP",
+    "width": 640,
+    "height": 480,
+    "bits": 24,
+    "compression": 0,
+    "pixel_offset": 54,
+    "bytes": 921654,
+    "orientation": "bottom-up",
+    "sha256": "905dabdbccf943edbdfb7f999a9ce06a395273938a0028d7a703e8f8fcff119c"
+  },
+  {
+    "file": "PIC3.BMP",
+    "width": 640,
+    "height": 480,
+    "bits": 24,
+    "compression": 0,
+    "pixel_offset": 54,
+    "bytes": 921654,
+    "orientation": "bottom-up",
+    "sha256": "8a265fa6089a8063729736e70977103d8d35588be347f83611fab4aaee819337"
+  },
+  {
+    "file": "PIC4.BMP",
+    "width": 640,
+    "height": 480,
+    "bits": 24,
+    "compression": 0,
+    "pixel_offset": 54,
+    "bytes": 921654,
+    "orientation": "bottom-up",
+    "sha256": "680da7c442b7964efeb8a331be45c5929ecae75cdc36074536cee9ef8845fc1a"
+  }
+]

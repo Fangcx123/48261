@@ -1,0 +1,10 @@
+PASS PCM output:        3584 signed-edge/alpha/stereo/volume cases, bit-exact fallback, silence and valid alignment
+verification/wav_v8/tb_audio_output.v:22: $finish called at 143430000 (1ps)
+PASS visualizer: 3 full frames, waveform/axis/peak/source marker, unchanged subtitle/background pixels, RGB/VS/DE delay, bypass, frame-latched banks, incomplete capture/reset
+verification/wav_v8/tb_visualizer.v:45: $finish called at 9249190000 (1ps)
+PASS fourbank scheduler: fixed banks, completion orders, preload barrier, ACK pending, cached keys and autoplay
+PASS fourbank faults: missing/bad banks skipped, late FAT cannot complete
+PASS effects scheduler: manual/auto kind, one usable bank suppresses next/previous/autoplay
+PASS fourbank recovery: missing first keeps ID, overflow/allbad, init/scan watchdog, no files, mount failure
+PASS audio SPI ownership: preload barrier, request/address mux, cached navigation while audio requests active, reset and bad/missing-image recovery
+verification/wav_v8/tb_audio_owner.v:127: $finish called at 272220000 (1ps)

@@ -1,0 +1,4 @@
+PASS scaler 320x240 padding=0 full-frame golden
+PASS scaler 640x480 padding=0 full-frame golden
+PASS scaler 1024x768 padding=0 full-frame golden
+PASS scaler 1920x1080 padding=0 full-frame golden

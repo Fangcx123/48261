@@ -1,0 +1,2 @@
+PASS background loader + full preview + continuous 640x480 display: 4 frames, no collisions, overflow or underflow
+verification/workstation_v10/tb_background_integrity.v:87: $finish called at 113767960000 (1ps)

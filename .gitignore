@@ -1,0 +1,17 @@
+# 演示视频
+/演示视频/
+*.mp4
+
+# FPGA 编译生成目录
+*_Runs/
+
+# Python 和仿真临时文件
+__pycache__/
+*.pyc
+*.vvp
+*.vcd
+*.fst
+
+# Windows 临时文件
+Thumbs.db
+Desktop.ini

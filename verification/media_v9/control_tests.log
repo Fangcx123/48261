@@ -1,0 +1,8 @@
+PASS UI ready/busy/wrap/missing/confirm/menu/defaults
+verification/media_v9/tb_ui.v:21: $finish called at 240000 (1ps)
+PASS UI scheduler: real debouncing, long-release, commit hold, current ID, auto pause/runtime period, single/missing, menu
+verification/media_v9/tb_ui_scheduler.v:53: $finish called at 180100000 (1ps)
+PASS view mailbox: target bank/view held through reader ACK, no early display change
+verification/media_v9/tb_view_commit.v:20: $finish called at 6200000 (1ps)
+PASS runtime PCM output:      917504 signed-edge/alpha/stereo/volume cases, bit-exact fallback, silence and valid alignment
+verification/media_v9/tb_runtime_audio.v:22: $finish called at 36700230000 (1ps)

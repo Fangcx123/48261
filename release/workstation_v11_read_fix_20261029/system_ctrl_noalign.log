@@ -1,0 +1,24 @@
+  mismatch frame 0 n=0 (x=0 y=0) got=100002 want=100001
+  mismatch frame 0 n=1 (x=1 y=0) got=100003 want=100002
+  mismatch frame 0 n=2 (x=2 y=0) got=100004 want=100003
+  mismatch frame 0 n=3 (x=3 y=0) got=100005 want=100004
+  mismatch frame 0 n=4 (x=4 y=0) got=100006 want=100005
+  mismatch frame 0 n=5 (x=5 y=0) got=100007 want=100006
+frame 0 bank 0 view 0: pixels=307200 mismatches=307200
+frame 1 bank 0 view 0: pixels=307200 mismatches=307200
+frame 2 bank 0 view 0: pixels=307200 mismatches=307200
+background bank 3 loaded during display, frames=3
+frame 3 bank 0 view 0: pixels=307200 mismatches=307200
+frame 4 bank 0 view 0: pixels=307200 mismatches=307200
+preview done=1 error=0 frames=5
+frame 5 bank 0 view 0: pixels=307200 mismatches=307200
+frame 6 bank 0 view 1: pixels=307200 mismatches=155040
+frame 7 bank 0 view 1: pixels=307200 mismatches=155040
+frame 8 bank 0 view 1: pixels=307200 mismatches=155040
+frame 9 bank 0 view 1: pixels=307200 mismatches=155040
+frame 10 bank 3 view 0: pixels=307200 mismatches=307200
+frame 11 bank 3 view 0: pixels=307200 mismatches=307200
+frame 12 bank 3 view 0: pixels=307200 mismatches=307200
+SUMMARY frames=13 thumb_frames=4 bad_frames=13 mismatches=3384960 underflow=0 reader_error=0 loader_overflow=0 preview_error=0 misaligned=0 collisions=0
+FAIL real-controller system
+verification/workstation_v11/tb_system_ctrl.v:139: $finish called at 235489101000 (1ps)

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-23",
+  "syn_opt": "passed",
+  "original_v7_source_differences": [],
+  "release_artifacts_changed": [],
+  "repaired_project_sha256": "d2996348dc8b2a96bd35045f082b5e16c0a2c1beea0e7fe2a7891e52231ffaed",
+  "original_v7_project_sha256": "d2996348dc8b2a96bd35045f082b5e16c0a2c1beea0e7fe2a7891e52231ffaed",
+  "gui_reopen_required": true,
+  "note": "Original v7 release manifest is retained as historical build input. No RTL or released bit was modified. Current GUI could not be synchronized: failed to activate captured window."
+}

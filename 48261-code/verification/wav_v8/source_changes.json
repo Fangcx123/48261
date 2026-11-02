@@ -1,0 +1,52 @@
+[
+  {
+    "path": "src\\user_source\\hdl_source\\top_tf_hdmi_audio.v",
+    "kind": "modified",
+    "sha256": "683f61efdfdd80deda2d553ddd6f1c8e63415288c9c873f5a82d86d7457bb64f"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\audio\\fat32_wav_player.v",
+    "kind": "added",
+    "sha256": "9191f4e64d23584d2cb2b00824ab98e2c5c3eea2d49e4d8158e5a56f204133c5"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\audio\\pcm_async_fifo.v",
+    "kind": "added",
+    "sha256": "bba054d2305f3da068222c8ce0abb237c45d8876feed17fa5ded7ac918a135eb"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\audio\\pcm_fade_output.v",
+    "kind": "added",
+    "sha256": "38316a226cd10a6ae4508dc569f57725d6da379efb89992d661c9d24a6b718dd"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\audio\\wav_pcm_decoder.v",
+    "kind": "added",
+    "sha256": "38600cb8b04b93b8f21147e01eafafad59be90007646d9bedf3e0917fae1520c"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\audio_visualizer.v",
+    "kind": "added",
+    "sha256": "d39305e374993ef79662a8b7c2b764d78a34bd23049c61e522d57fe990616ccf"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\display\\promax_audio_waveform.v",
+    "kind": "added",
+    "sha256": "bb13f228ce393ecbc5a16610d6eb847b5338a8cfa809370d2aede6abbd1a9d58"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\fat32_file_streamer.v",
+    "kind": "modified",
+    "sha256": "1275bdba1f691f4ec10573f5099e2facfa2c12c4b7702cf4a7eadc1781a7a607"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\fat32_volume_scanner.v",
+    "kind": "modified",
+    "sha256": "49761be5761baa4cbfcddd9db4b181719ba115a01936235ad5732950336d8356"
+  },
+  {
+    "path": "src\\user_source\\hdl_source\\SD\\media_player_control.v",
+    "kind": "modified",
+    "sha256": "5ddef7dae1aa54339abf67ebf7428e2e0a7b511dd9bfc8c529c42d0da4fbd4c8"
+  }
+]

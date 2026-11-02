@@ -1,0 +1,7 @@
+u_reset_mem/s2_reg_syn_4: u_reset_mem/s2, u_reset_mem/s1
+u_reset_sd/s1_reg_syn_4: u_reset_sd/s1, u_reset_sd/s2
+u_reset_serial/s2_reg_syn_4: u_reset_serial/s2, u_reset_serial/s1
+u_reset_video/s2_reg_syn_4: u_reset_video/s2, u_reset_video/s1
+PASS FIFO reset constraints: u_frame_loader/fifo_rst drives only four reset synchronizer SR inputs
+PASS FIFO reset constraints: u_frame_reader/clear_fifo drives only four reset synchronizer SR inputs
+PASS reset constraints: raw reset drives only 8 synchronizer SR inputs; packed names audited; s1-Q/s2-D and downstream paths stay timed

@@ -1,0 +1,18 @@
+PASS adjustment 6400 signed/saturation/identity/DE cases
+verification/media_v9/tb_adjust.v:23: $finish called at 64080000 (1ps)
+PASS UI ready/busy/wrap/missing/confirm/menu/defaults
+verification/media_v9/tb_ui.v:21: $finish called at 240000 (1ps)
+PASS scaler 1x1 padding=1 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 12288160000 (1ps)
+PASS scaler 3x5 padding=3 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 12289280000 (1ps)
+PASS scaler 320x240 padding=0 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 16896080000 (1ps)
+PASS scaler 641x481 padding=1 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 30796970000 (1ps)
+PASS scaler 1280x960 padding=0 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 86016100000 (1ps)
+PASS scaler 2048x2 padding=0 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 12533870000 (1ps)
+PASS scaler 2x2048 padding=2 full-frame golden
+verification/media_v9/tb_scaler.v:32: $finish called at 12615800000 (1ps)

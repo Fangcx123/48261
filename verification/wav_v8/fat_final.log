@@ -1,0 +1,44 @@
+PASS FAT32 mbr_fragmented: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 superfloppy: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 536010000 (1ps)
+PASS FAT32 spc8_root_sector2: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 350190000 (1ps)
+PASS FAT32 root_cluster2: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 566890000 (1ps)
+PASS FAT32 partition2_activefat1: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546310000 (1ps)
+PASS FAT32 high_lba: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 missing_pic1: mask=4 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 bad_bpb: mask=0 mount=21 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 20720000 (1ps)
+PASS FAT32 bad_signature: mask=0 mount=20 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 20720000 (1ps)
+PASS FAT32 no_files: mask=0 mount=22 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 31050000 (1ps)
+PASS FAT32 early_eof: mask=5 mount=00 load=a pixels=0
+verification/tb_fat32.v:103: $finish called at 62060000 (1ps)
+PASS FAT32 range: mask=5 mount=00 load=a pixels=0
+verification/tb_fat32.v:103: $finish called at 62060000 (1ps)
+PASS FAT32 loop: mask=5 mount=00 load=a pixels=170
+verification/tb_fat32.v:103: $finish called at 103260000 (1ps)
+PASS FAT32 bad_bmp: mask=5 mount=00 load=3 pixels=0
+verification/tb_fat32.v:103: $finish called at 41410000 (1ps)
+PASS FAT32 short_sector: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 329990000 (1ps)
+PASS FAT32 timeout: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 519770000 (1ps)
+PASS FAT32 fat_last_error: mask=5 mount=00 load=a pixels=1600
+verification/tb_fat32.v:103: $finish called at 288660000 (1ps)
+PASS FAT32 root_loop: mask=0 mount=23 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 82520000 (1ps)
+PASS FAT32 extended_header: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 793500000 (1ps)
+PASS FAT32 ordinary_header: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 463900000 (1ps)
+PASS FAT32 full_640x480: mask=5 mount=00 load=0 pixels=307200
+verification/tb_fat32.v:103: $finish called at 41745100000 (1ps)
+PASS FAT32 overrun: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 330030000 (1ps)

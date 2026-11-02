@@ -1,0 +1,15 @@
+tiny 3 5 14
+odd 641 481 1817
+latefat 640 480 1810
+negative 3 5 6
+compressed 3 5 6
+PASS scaled FAT tiny: RGB golden, pixels=307200, code=0
+verification/media_v9/tb_scaled_fat.v:51: $finish called at 24815650000 (1ps)
+PASS scaled FAT odd: RGB golden, pixels=307200, code=0
+verification/media_v9/tb_scaled_fat.v:51: $finish called at 30933160000 (1ps)
+PASS scaled FAT latefat: RGB golden, pixels=307046, code=a
+verification/media_v9/tb_scaled_fat.v:51: $finish called at 30846320000 (1ps)
+PASS scaled FAT negative: RGB golden, pixels=0, code=2
+verification/media_v9/tb_scaled_fat.v:51: $finish called at 41440000 (1ps)
+PASS scaled FAT compressed: RGB golden, pixels=0, code=3
+verification/media_v9/tb_scaled_fat.v:51: $finish called at 41440000 (1ps)

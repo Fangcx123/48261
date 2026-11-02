@@ -1,0 +1,4 @@
+PASS write handoff: busy/refresh start gating, uninterrupted 128-word bursts, pipeline ownership and vertical flip
+verification/workstation_v10/tb_write_handoff.v:44: $finish called at 8340000 (1ps)
+PASS write handoff: busy/refresh start gating, uninterrupted 128-word bursts, pipeline ownership and vertical flip
+verification/workstation_v10/tb_write_handoff.v:44: $finish called at 7788000 (1ps)

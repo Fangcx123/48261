@@ -1,0 +1,2 @@
+PASS menu synthesized netlist equals RTL: all pixels, numeric values, mute/status and bypass
+verification/workstation_v10/tb_menu_gate.v:39: $finish called at 12481040000 (1ps)

@@ -1,0 +1,2 @@
+FATAL: verification/tb_sd_startup.v:48: SD startup/retry deadlock: stage=3 card_idle=0 ready_CMD55=166
+       Time: 1000045000  Scope: tb_sd_startup

@@ -1,0 +1,2 @@
+AUTO REFRESH commands=153 over 198056 cycles -> mean interval 1303 cycles (31272 ns); longest Sdr_init_ref_vld run=20 cycles
+verification/workstation_v11/tb_refresh_probe.v:22: $finish called at 7946784000 (1ps)

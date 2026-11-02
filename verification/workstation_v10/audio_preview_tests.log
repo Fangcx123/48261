@@ -1,0 +1,36 @@
+PASS preview: all 307200 pixels, three RGB888 tiles, missing tile, gapped returns, source banks intact
+verification/workstation_v10/tb_preview_builder.v:42: $finish called at 10963680000 (1ps)
+PASS WAV mono samples=20000 requests=163 maxlevel=4085 silence=0 error=00
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 16892440000 (1ps)
+PASS WAV stereo samples=20000 requests=319 maxlevel=3957 silence=0 error=00
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 16902840000 (1ps)
+PASS WAV tailfat samples=20000 requests=163 maxlevel=4085 silence=6140 error=00
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 21804440000 (1ps)
+PASS WAV underflow samples=20000 requests=163 maxlevel=4085 silence=2178 error=00
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 18634840000 (1ps)
+PASS WAV timeout samples=4586 requests=39 maxlevel=4085 silence=7165 error=10
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 10210080000 (1ps)
+PASS WAV bad_rate samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV bad_bits samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV bad_align samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV bad_magic samples=0 requests=4 maxlevel=0 silence=0 error=31
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV bad_riff samples=0 requests=4 maxlevel=0 silence=0 error=32
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV truncated samples=0 requests=4 maxlevel=0 silence=0 error=32
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV no_data samples=0 requests=5 maxlevel=0 silence=0 error=35
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV odd_data samples=0 requests=4 maxlevel=0 silence=0 error=34
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV bad_fat samples=0 requests=9 maxlevel=746 silence=0 error=24
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV loop_fat samples=0 requests=15 maxlevel=1514 silence=0 error=23
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV short_sector samples=0 requests=4 maxlevel=233 silence=0 error=10
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 809040000 (1ps)
+PASS WAV missing samples=0 requests=3 maxlevel=0 silence=0 error=00
+verification/workstation_v10/tb_wav_player.v:109: $finish called at 821040000 (1ps)

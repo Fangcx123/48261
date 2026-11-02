@@ -1,0 +1,18 @@
+{
+  "project": "src/td_project_workstation_v10/HDMI1.4b_Transmitter_v1.0.al",
+  "tool": "Tang Dynasty 6.2.168116",
+  "bitstream": "workstation_v10_display_fix_20261028.bit",
+  "bitstream_sha256": "de53ef4abf09c8854985cd1b4f46c7d01380e1cffcda409478bc3120e95e3ab5",
+  "routed_database_sha256": "aadd697fbd9bf0702c1893a9726f880aa9838e73a3ffacf5211f04d950aab4cd",
+  "source_files_verified": 80,
+  "setup_wns_ns": 0.11,
+  "hold_wns_ns": 0.024,
+  "hardware_tested": false,
+  "placement_seed": 1,
+  "build_steps": [
+    "build_display_fix.tcl",
+    "fix_hold_display_fix.tcl",
+    "bitgen_display_fix.tcl",
+    "package_display_fix.py"
+  ]
+}

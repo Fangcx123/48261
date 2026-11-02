@@ -1,0 +1,2 @@
+PASS OSD actual source dimensions for four BMP sizes, fixed HDMI output, frame-held labels
+verification/workstation_v10/tb_dimensions_osd.v:29: $finish called at 430000 (1ps)

@@ -1,0 +1,10 @@
+PASS audio events: first/same/preview filtering, delayed startup, 100ms cue, speech drop/cancel/no queue
+verification/workstation_v10/tb_audio_events.v:26: $finish called at 4900000 (1ps)
+PASS UI ready/busy/wrap/missing/confirm/menu/defaults
+verification/workstation_v10/tb_ui.v:31: $finish called at 340000 (1ps)
+PASS settings CDC stable mailbox and frame-only capture
+verification/workstation_v10/tb_settings.v:18: $finish called at 6766000 (1ps)
+PASS view mailbox: target bank/view held through reader ACK, no early display change
+verification/workstation_v10/tb_view_commit.v:27: $finish called at 6200000 (1ps)
+PASS UI scheduler: real debouncing, long-release, commit hold, current ID, auto pause/runtime period, single/missing, menu
+verification/workstation_v10/tb_ui_scheduler.v:68: $finish called at 309920000 (1ps)

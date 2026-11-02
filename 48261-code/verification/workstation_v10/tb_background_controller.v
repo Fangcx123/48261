@@ -1,0 +1,115 @@
+`timescale 1ns/1ps
+// Actual frame timing, request delay, ACK CDC, mailbox, reader and video delay.
+module tb_background_controller;
+reg mc=0,pc=0,sc=0,rst=1,commit=0;always #12 mc=~mc;always #20 pc=~pc;always #5 sc=~sc;
+reg [31:0] ram[0:2097151];integer init_i;
+initial for(init_i=0;init_i<2097152;init_i=init_i+1) ram[init_i]={pattern(init_i/307200,init_i%307200),8'd0};
+reg [1:0] selected=0;reg selected_valid=0;
+wire req,ack,hs,vs,de,consume,pvalid,visible,commit_ack,rb,ren,under,outde;
+wire [1:0] bank,id;wire [20:0] addr;wire [31:0] pixel;wire [23:0] rgb;wire [3:0] err;
+reg [3:0] req_delay=0;reg [1:0] ack_sync=0;
+always @(posedge pc) if(rst) begin req_delay<=0;ack_sync<=0;end else begin req_delay<={req_delay[2:0],req};ack_sync<={ack_sync[0],ack};end
+frame_commit_cdc mailbox(.clk(pc),.rst(rst),.commit_toggle(commit),.commit_bank(selected),.commit_id(selected),
+ .commit_valid(selected_valid),.frame_read_req(req),.frame_read_ack(ack_sync[1]),
+ .commit_ack(commit_ack),.read_bank(bank),.media_id(id),.display_valid(visible));
+video_timing_data timing(.video_clk(pc),.rst(rst),.read_req(req),.read_req_ack(ack_sync[1]),.hs(hs),.vs(vs),.de(de));
+video_delay delay_pixels(.video_clk(pc),.rst(rst),.read_en(consume),.read_data(pvalid?pixel[31:8]:24'd0),
+ .hs(hs),.vs(vs),.de(de),.hs_r(),.vs_r(),.de_r(outde),.vout_data(rgb));
+wire pb,pdone,pe,pre,pwe,urgent,wb,we,wa_ack,ldone,memerr,pready;
+wire [20:0] pra,pwa,wa;wire [31:0] pwd,wd;
+reg wrq=0,pv=0;reg [31:0] wdata=0;reg preload=0;
+wire bus_read=pb ? pre:ren;wire [20:0] bus_addr=pb ? pra:addr;
+media_preview_builder builder(.clk(mc),.rst(rst),.preload_done(preload),.complete(4'hf),
+ .controller_ready(cinit),.controller_busy(cbusy),.refresh_active(cref),.loader_busy(wb),.reader_busy(rb || urgent),
+ .rd_valid(crv),.rd_data(crd),
+ .busy(pb),.done(pdone),.error(pe),.rd_en(pre),.rd_addr(pra),.wr_en(pwe),.wr_addr(pwa),.wr_data(pwd));
+media_frame_loader loader(.mem_clk(mc),.rst(rst),.source_clk(sc),.source_rst(rst),
+ .controller_init_done(cinit),.controller_busy(cbusy),.refresh_active(cref),.read_busy(rb || pb || urgent),
+ .write_req(wrq),.image_index(2'd3),.pixel_valid(pv),.pixel_data(wdata),.write_req_ack(wa_ack),.load_done(ldone),
+ .write_busy(wb),.memory_error(memerr),.pixel_ready(pready),.app_wr_en(we),.app_wr_addr(wa),.app_wr_data(wd),.app_wr_mask());
+
+wire cinit,cbusy,cref,crv;wire [31:0] crd;wire sclk,ras,cas,swe;wire [10:0] sa;wire [1:0] ba;wire [3:0] dm;tri [31:0] dq;
+sdr_as_ram controller(.Sdr_clk(mc),.Sdr_clk_sft(~mc),.Rst(rst),.App_ref_req(1'b0),
+ .Sdr_init_done(cinit),.Sdr_init_ref_vld(cref),.Sdr_busy(cbusy),
+ .App_rd_en(bus_read),.App_rd_addr(bus_addr),.Sdr_rd_en(crv),.Sdr_rd_dout(crd),
+ .App_wr_en(pb?pwe:we),.App_wr_addr(pb?pwa:wa),.App_wr_din(pb?pwd:wd),.App_wr_dm(4'd0),
+ .SDRAM_CLK(sclk),.SDR_RAS(ras),.SDR_CAS(cas),.SDR_WE(swe),.SDR_ADDR(sa),.SDR_BA(ba),.SDR_DM(dm),.SDR_DQ(dq));
+reg [10:0] openrow[0:3];reg [31:0] q0,q1,q2;reg [2:0] qv=0;integer a,physwrites=0;reg [2:0] cl=3;
+assign dq=qv[cl-1] ? (cl==2 ? q1:q2) : 32'bz;
+always @(posedge sclk)begin
+ qv<={qv[1:0],1'b0};q2<=q1;q1<=q0;
+ case({ras,cas,swe})
+  3'b011:openrow[ba]<=sa;
+  3'b000:begin cl<=sa[6:4];$display("SDRAM mode %h CL=%d",sa,sa[6:4]);end
+  3'b100:begin
+   a={openrow[ba],ba,sa[7:0]};
+   if(dm!=0)$fatal(1,"unexpected mask");
+   ram[a]<=dq;physwrites=physwrites+1;
+   if(physwrites<=3)$display("PHY WRITE addr=%d data=%h",a,dq);
+  end
+  3'b101:begin a={openrow[ba],ba,sa[7:0]};q0<=ram[a];qv[0]<=1;end
+ endcase
+end
+
+integer preview_writes=0,background_writes=0;
+always @(posedge mc)if(!rst)begin
+ if(pb && (rb || wb))$fatal(1,"SDRAM owners collide");
+ if(we)begin if(wa<921600 || wa>=1228800)$fatal(1,"loader overwrote visible bank");if(wd!=={pattern(3,(479-(wa%307200)/640)*640+wa%640),8'd0})
+ $fatal(1,"background write corrupt addr=%d n=%d got=%h expected=%h used=%d",wa,background_writes,wd,{pattern(3,(479-(wa%307200)/640)*640+wa%640),8'd0},loader.used);
+ // physical controller writes RAM;
+ background_writes=background_writes+1;end
+ if(pwe)begin if(pwa<1228800 || pwa>=1536000)$fatal(1,"preview overwrote visible bank");preview_writes=preview_writes+1;end
+end
+always @(posedge pc)if(memerr)$fatal(1,"background loader overflow");
+reg [7:0] vpipe=0;reg [20:0] apipe[0:7];integer j;
+always @(posedge mc) begin
+ if(rst) vpipe<=0;
+ else begin vpipe<={vpipe[6:0],bus_read};apipe[0]<=bus_addr;for(j=1;j<8;j=j+1) apipe[j]<=apipe[j-1];end
+end
+function [23:0] pattern(input integer b,input integer n);
+ begin pattern=((b+1)<<20)|(n+1);end
+endfunction
+media_frame_reader reader(.mem_clk(mc),.rst(rst),.pix_clk(pc),.pix_rst(rst),.controller_init_done(cinit),
+ .write_busy(wb || pb),.read_req(req_delay[3]),.active_index(bank),.read_req_ack(ack),.frame_read_done(),
+ .read_urgent(urgent),.read_busy(rb),.app_rd_en(ren),.app_rd_addr(addr),.sdram_rd_valid(crv),
+ .sdram_rd_data(crd),
+ .pixel_consume(consume),.display_valid(visible),.pixel_data(pixel),.pixel_valid(pvalid),.underflow(under),.reader_error(err));
+integer n=0,frames=0,requests=0;
+reg req_old=0;reg [1:0] image_bank=0;
+always @(posedge pc) begin
+ #1;
+ if(rst) begin n=0;frames=0;req_old=0;requests=0;end
+ else begin
+  if(req && !req_old) begin
+   if(visible && n!=307200) $fatal(1,"incomplete preceding frame %d",n);
+   n=0;requests=requests+1;
+  end
+  req_old=req;
+  if(outde && visible) begin
+   if(n==0) image_bank=bank;
+   if(bank!=image_bank || rgb!==pattern(image_bank,n)) $fatal(1,"frame mixing/alignment n=%d bank=%d rgb=%h",n,bank,rgb);
+   n=n+1;if(n==307200) frames=frames+1;
+  end
+  if(under || err) $fatal(1,"video underflow/error %h",err);
+  if(!visible && ren) $fatal(1,"read before first valid commit");
+ end
+end
+integer k;
+initial begin
+ repeat(10) @(negedge pc);rst=0;
+ wait(cinit);wait(requests>=1);repeat(1000)@(negedge pc);
+ selected=0;selected_valid=1;commit=1;wait(commit_ack==1);wait(frames==1);
+ // Push a complete background frame as fast as loader backpressure allows.
+ wrq=1;wait(wa_ack);@(negedge sc);wrq=0;wait(!wa_ack);repeat(8)@(negedge sc);
+ for(k=0;k<307200;k=k+1)begin
+  while(!pready)begin pv=0;@(negedge sc);end
+  pv=1;wdata={pattern(3,k),8'd0};@(negedge sc);
+ end
+ pv=0;wait(ldone);@(negedge pc);preload=1;
+ wait(pdone);repeat(30)@(negedge pc);
+ if(pe || under || err || preview_writes!=307200 || background_writes!=307200)$fatal(1,"background completion/count");
+ if(frames<2)$fatal(1,"display stopped during background tasks");
+ $display("PASS background loader + full preview + continuous 640x480 display: %0d frames, no collisions, overflow or underflow",frames);$finish;
+end
+initial begin #700000000;$fatal(1,"background timeout builder=%d writes=%d frames=%d",builder.state,preview_writes,frames);end
+endmodule

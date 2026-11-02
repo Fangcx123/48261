@@ -1,0 +1,12 @@
+wsl: Failed to start the systemd user session for 'lenovo'. See journalctl for more details.
+PASS transition fade: 16 complete fade-out frames, black ACK wait, 16 fade-in frames, source backpressure
+PASS transition wipe: latched mode, 40-pixel/frame reveal, reset, bypass
+verification/tb_transition.v:61: $finish called at 14000000 (1ps)
+PASS OSD pixels: 5 full 640x480 frames, RGB/sync alignment, exact bypass, fade, wipe, preload black, frame-latched status, hex D, no stale fixed subtitle
+PASS HDMI AXIS: exact RGB, one SOF per frame, one EOL at pixel 639 per line
+verification/tb_osd.v:97: $finish called at 62215280000 (1ps)
+PASS OSD timer: real clock seconds, minute rollover, 99:59 wrap, frame capture, reset
+verification/tb_osd.v:117: $finish called at 600040000 (1ps)
+PASS effects video: real 640x480 timing/FIFO, initial black, manual bank swap at black, auto wipe, every pixel checked, no tearing/underflow
+verification/tb_effects_video.v:93: $finish called at 285569680000 (1ps)
+ALL OSD TRANSITION TESTS PASSED

@@ -1,0 +1,22 @@
+{
+  "PIC1.BMP": {
+    "source": "doc\\convert\\output_bmp\\0.bmp",
+    "bytes": 921654,
+    "sha256": "f9938325dcf16100ef4cd08ab2827e1e646878ae54518cb1604dc04875dca218"
+  },
+  "PIC2.BMP": {
+    "source": "doc\\convert\\output_bmp\\1.bmp",
+    "bytes": 921654,
+    "sha256": "958c09c75d9c1c329419b59b74c5b338f299e05648b1f76c8b93a1e567bb7665"
+  },
+  "PIC3.BMP": {
+    "source": "doc\\convert\\output_bmp\\3.bmp",
+    "bytes": 921654,
+    "sha256": "e84c4a500b919251a0df1ab6b8448e2d94438065fca0fe14a520e3c658e06bdd"
+  },
+  "PIC4.BMP": {
+    "source": "doc\\convert\\output_bmp\\4.bmp",
+    "bytes": 921654,
+    "sha256": "78c9692b7c47af62e82220ba294e71548507da16990aa04f7c3dd58987b3ca06"
+  }
+}

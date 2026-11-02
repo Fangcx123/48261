@@ -1,0 +1,101 @@
+PASS BMP: RGB24, exact pixels/tail, 32-bit dimensions, planes, bounds, DIB, short header/sector
+PASS frame mailbox: boundary switch and ACK, both toggle polarities
+PASS audio: 4800 samples/100ms, 520/521 clocks, stereo and media cue
+PASS ACR: N=6144, CTS=25000, 100 packets/100ms
+ALL LESSONS456 UNIT TESTS PASSED
+verification/tb_lessons456.v:152: $finish called at 100152880000 (1ps)
+PASS scheduler: SDRAM gate, both completion orders, display ACK, bad BMP, stall, bounded skip/all-bad
+PASS scan watchdog: no progress triggers IO reset/rescan
+PASS initialization watchdog: absent card triggers retry
+PASS FAT32 scheduler: missing-slot IDs, first available, next/previous skip, late FAT error preserves frame
+PASS FAT32 mount failure: error 9, no load
+PASS key mapping: KEY1 short next, long previous once, release suppression, KEY2 autoplay, readiness gate
+verification/tb_scheduler.v:163: $finish called at 209100000 (1ps)
+PASS frame FIFO: full=512 blocks read refill and permits write drain; burst=256
+verification/tb_frame_fifo.v:33: $finish called at 7450000 (1ps)
+PASS SD startup: power delay, 88 clocks, ACMD41 retries, CMD16 recovery, late init_done, read command
+verification/tb_sd_startup.v:169: $finish called at 109975000 (1ps)
+PASS SD startup: power delay, 88 clocks, ACMD41 retries, CMD16 recovery, late init_done, read command
+PASS SD R1 recovery: corrupt=1 drop=0 CMD55_error=0 late=0 ready_CMD55=1
+verification/tb_sd_startup.v:169: $finish called at 121245000 (1ps)
+PASS SD startup: power delay, 88 clocks, ACMD41 retries, CMD16 recovery, late init_done, read command
+PASS SD R1 recovery: corrupt=0 drop=1 CMD55_error=0 late=0 ready_CMD55=1
+verification/tb_sd_startup.v:169: $finish called at 131745000 (1ps)
+PASS SD startup: power delay, 88 clocks, ACMD41 retries, CMD16 recovery, late init_done, read command
+PASS SD R1 recovery: corrupt=0 drop=0 CMD55_error=1 late=0 ready_CMD55=0
+verification/tb_sd_startup.v:169: $finish called at 129675000 (1ps)
+PASS SD startup: power delay, 88 clocks, ACMD41 retries, CMD16 recovery, late init_done, read command
+PASS SD R1 recovery: corrupt=0 drop=1 CMD55_error=1 late=1 ready_CMD55=1
+verification/tb_sd_startup.v:169: $finish called at 159845000 (1ps)
+PASS board startup: no reset-key pulse, PLL hold, stable lock hold, peripheral reset, lock loss, manual restart
+verification/tb_board_startup.v:53: $finish called at 1855000 (1ps)
+PASS FAT32 mbr_fragmented: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 superfloppy: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 536010000 (1ps)
+PASS FAT32 spc8_root_sector2: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 350190000 (1ps)
+PASS FAT32 root_cluster2: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 566890000 (1ps)
+PASS FAT32 partition2_activefat1: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546310000 (1ps)
+PASS FAT32 high_lba: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 missing_pic1: mask=4 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 546300000 (1ps)
+PASS FAT32 bad_bpb: mask=0 mount=21 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 20720000 (1ps)
+PASS FAT32 bad_signature: mask=0 mount=20 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 20720000 (1ps)
+PASS FAT32 no_files: mask=0 mount=22 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 31050000 (1ps)
+PASS FAT32 early_eof: mask=5 mount=00 load=a pixels=0
+verification/tb_fat32.v:103: $finish called at 62060000 (1ps)
+PASS FAT32 range: mask=5 mount=00 load=a pixels=0
+verification/tb_fat32.v:103: $finish called at 62060000 (1ps)
+PASS FAT32 loop: mask=5 mount=00 load=a pixels=170
+verification/tb_fat32.v:103: $finish called at 103260000 (1ps)
+PASS FAT32 bad_bmp: mask=5 mount=00 load=3 pixels=0
+verification/tb_fat32.v:103: $finish called at 41410000 (1ps)
+PASS FAT32 short_sector: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 329990000 (1ps)
+PASS FAT32 timeout: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 519770000 (1ps)
+PASS FAT32 fat_last_error: mask=5 mount=00 load=a pixels=1600
+verification/tb_fat32.v:103: $finish called at 288660000 (1ps)
+PASS FAT32 root_loop: mask=0 mount=23 load=0 pixels=0
+verification/tb_fat32.v:103: $finish called at 82520000 (1ps)
+PASS FAT32 extended_header: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 793500000 (1ps)
+PASS FAT32 ordinary_header: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 463900000 (1ps)
+PASS FAT32 full_640x480: mask=5 mount=00 load=0 pixels=307200
+verification/tb_fat32.v:103: $finish called at 41745100000 (1ps)
+PASS FAT32 overrun: mask=5 mount=00 load=0 pixels=1600
+verification/tb_fat32.v:103: $finish called at 330030000 (1ps)
+PASS read-only FAT32 inspector: fragmented RGB24 image, missing files, unchanged image, invalid BPB/root loop/final FAT
+PASS fourbank scheduler: fixed banks, completion orders, preload barrier, ACK pending, cached keys and autoplay
+PASS fourbank faults: missing/bad banks skipped, late FAT cannot complete
+PASS effects scheduler: manual/auto kind, one usable bank suppresses next/previous/autoplay
+PASS fourbank recovery: missing first keeps ID, overflow/allbad, init/scan watchdog, no files, mount failure
+verification/tb_fourbank_scheduler.v:120: $finish called at 272190000 (1ps)
+INFO fourbank write bank 0 verified
+INFO fourbank write bank 1 verified
+INFO fourbank write bank 2 verified
+INFO fourbank write bank 3 verified
+INFO fourbank read bank 0 verified
+INFO fourbank read bank 1 verified
+INFO fourbank read bank 2 verified
+INFO fourbank read bank 3 verified
+PASS fourbank datapath: 640x480 four banks, real asynchronous FIFOs, RGB/vertical flip, 128-word bursts, video alignment, gapped returns
+PASS fourbank read timeout: missing SDRAM returns halt until reset
+PASS fourbank underflow: active video empty FIFO detected
+PASS fourbank write overflow: real FIFO fills while memory unavailable
+verification/tb_fourbank_datapath.v:116: $finish called at 135392060000 (1ps)
+PASS fourbank video: actual 640x480 timing, blank preload ACK, first commit, complete frames, bank switch without mixing or underflow
+verification/tb_fourbank_video.v:59: $finish called at 67169680000 (1ps)
+PASS transition fade: 16 complete fade-out frames, black ACK wait, 16 fade-in frames, source backpressure
+PASS transition wipe: latched mode, 40-pixel/frame reveal, reset, bypass
+verification/tb_transition.v:61: $finish called at 14000000 (1ps)
+FATAL: verification/tb_osd.v:92: frame size or subtitle
+       Time: 62215280000  Scope: tb_osd

@@ -1,0 +1,117 @@
+{
+  "wav_sha256": "dacd314b9b9bde7fdbd7bf61738d0c7c8d5b04395d5a96a3f16f18e68fa10008",
+  "sample_rate": 48000,
+  "timing_method": "TTS pause alignment; verify phrase boundaries by listening on board",
+  "cues": [
+    {
+      "start_sample": 6240,
+      "end_sample": 120000,
+      "text": "欢迎使用工位四步通。"
+    },
+    {
+      "start_sample": 142560,
+      "end_sample": 272160,
+      "text": "四张图卡分别介绍准备、"
+    },
+    {
+      "start_sample": 272160,
+      "end_sample": 393600,
+      "text": "操作、对照和收尾。"
+    },
+    {
+      "start_sample": 418080,
+      "end_sample": 520800,
+      "text": "短按板上的按键二，"
+    },
+    {
+      "start_sample": 520800,
+      "end_sample": 598080,
+      "text": "查看下一张；"
+    },
+    {
+      "start_sample": 598080,
+      "end_sample": 648000,
+      "text": "长按，"
+    },
+    {
+      "start_sample": 648000,
+      "end_sample": 724800,
+      "text": "返回上一张。"
+    },
+    {
+      "start_sample": 749760,
+      "end_sample": 825120,
+      "text": "短按按键四，"
+    },
+    {
+      "start_sample": 825120,
+      "end_sample": 945600,
+      "text": "开启或停止自动轮播。"
+    },
+    {
+      "start_sample": 967680,
+      "end_sample": 1082880,
+      "text": "长按按键四并松开，"
+    },
+    {
+      "start_sample": 1082880,
+      "end_sample": 1161600,
+      "text": "进入四图预览。"
+    },
+    {
+      "start_sample": 1185600,
+      "end_sample": 1312320,
+      "text": "使用按键二移动选框，"
+    },
+    {
+      "start_sample": 1312320,
+      "end_sample": 1387680,
+      "text": "短按按键四，"
+    },
+    {
+      "start_sample": 1387680,
+      "end_sample": 1483200,
+      "text": "打开选中的图片。"
+    },
+    {
+      "start_sample": 1503840,
+      "end_sample": 1583040,
+      "text": "需要重听时，"
+    },
+    {
+      "start_sample": 1583040,
+      "end_sample": 1755840,
+      "text": "在预览中再次长按按键四并松开，"
+    },
+    {
+      "start_sample": 1755840,
+      "end_sample": 1819200,
+      "text": "进入菜单。"
+    },
+    {
+      "start_sample": 1839360,
+      "end_sample": 1934400,
+      "text": "选到重播项后，"
+    },
+    {
+      "start_sample": 1934400,
+      "end_sample": 2006400,
+      "text": "短按按键二。"
+    },
+    {
+      "start_sample": 2029920,
+      "end_sample": 2113440,
+      "text": "开始操作前，"
+    },
+    {
+      "start_sample": 2113440,
+      "end_sample": 2218080,
+      "text": "请确认安全事项，"
+    },
+    {
+      "start_sample": 2218080,
+      "end_sample": 2332536,
+      "text": "并遵循教师指导。"
+    }
+  ]
+}

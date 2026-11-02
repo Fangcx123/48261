@@ -1,0 +1,38 @@
+standard
+***Report Model: media_menu_overlay Device: EG4S20BG256***
+
+IO Statistics
+#IO                        91   out of    188   48.40%
+  #input                   65
+  #output                  26
+  #inout                    0
+
+LUT Statistics
+#Total_luts               315
+  #lut4                   234
+  #lut5                    81
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                      647   out of  19600    3.30%
+#reg                       99   out of  19600    0.51%
+#bram                       3   out of     64    4.69%
+  #bram9k                   3
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                        0   out of     29    0.00%
+#pad                       91   out of    188   48.40%
+  #ireg                     2
+  #oreg                     2
+  #treg                     0
+#pll                        0   out of      4    0.00%
+#gclk                       0   out of     16    0.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------+
+|Instance |Module             |lut     |ripple  |seq     |bram    |dsp     |
++--------------------------------------------------------------------------+
+|top      |media_menu_overlay |481     |166     |103     |3       |0       |
++--------------------------------------------------------------------------+

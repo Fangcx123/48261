@@ -1,0 +1,2 @@
+FATAL: verification/workstation_v10/tb_write_handoff.v:25: write ownership released before controller pipeline drained
+       Time: 3504000  Scope: tb_write_handoff

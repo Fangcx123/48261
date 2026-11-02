@@ -1,0 +1,23 @@
+{
+  "project": "src/td_project_workstation_v10/HDMI1.4b_Transmitter_v1.0.al",
+  "tool": "Tang Dynasty 6.2.168116",
+  "bitstream": "workstation_v11_read_fix_20261029.bit",
+  "bitstream_sha256": "e035023ddd5aa654bcedb9ba112d9271e49c0945f8bc80fc2d3fe8cd5b589610",
+  "routed_database_sha256": "e8e4c45531ddbeb7780ec64f286bc6834a50b8610251eed514034df8586aab55",
+  "source_files_verified": 80,
+  "source_files_changed_from_v10": [
+    "src/user_source/hdl_source/SD/media_frame_reader.v",
+    "src/user_source/hdl_source/top_tf_hdmi_audio.v"
+  ],
+  "setup_wns_ns": 0.068,
+  "hold_wns_ns": 0.033,
+  "placement_seed": 5,
+  "hardware_tested": false,
+  "project_file_sha256": "f4a0c14eb573ec43950ac243b419cd5cfa3f84ddac31812ceab09d59a630f826",
+  "build_steps": [
+    "build_v11.tcl",
+    "fix_hold_v11.tcl",
+    "bitgen_v11.tcl",
+    "package_v11.py"
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  "src/user_source/constraints_source/pin.adc",
+  "src/user_source/hdl_source/frame_commit_cdc.v",
+  "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+  "src/user_source/hdl_source/audio/fat32_wav_player.v",
+  "src/user_source/hdl_source/audio/media_audio_events.v",
+  "src/user_source/hdl_source/audio/wav_pcm_decoder.v",
+  "src/user_source/hdl_source/display/media_menu_overlay.v",
+  "src/user_source/hdl_source/display/media_settings_cdc.v",
+  "src/user_source/hdl_source/display/promax_audio_waveform.v",
+  "src/user_source/hdl_source/display/promax_text_overlay.v",
+  "src/user_source/hdl_source/display/video_effects_pipeline.v",
+  "src/user_source/hdl_source/SD/bmp_nearest_scaler.v",
+  "src/user_source/hdl_source/SD/fat32_bmp_reader.v",
+  "src/user_source/hdl_source/SD/fat32_file_streamer.v",
+  "src/user_source/hdl_source/SD/fat32_volume_scanner.v",
+  "src/user_source/hdl_source/SD/media_frame_loader.v",
+  "src/user_source/hdl_source/SD/media_frame_reader.v",
+  "src/user_source/hdl_source/SD/media_player_control.v",
+  "src/user_source/hdl_source/SD/media_preview_builder.v",
+  "src/user_source/hdl_source/SD/media_ui_controller.v",
+  "src/user_source/hdl_source/SD/sd_sector_adapter.v"
+]

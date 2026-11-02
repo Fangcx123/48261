@@ -1,0 +1,20 @@
+{
+  "project": "src/td_project_workstation_v10/HDMI1.4b_Transmitter_v1.0.al",
+  "tool": "Tang Dynasty 6.2.168116",
+  "bitstream": "workstation_v10_display_fix_20261028.bit",
+  "bitstream_sha256": "e035927561cfbf6b4d63968bc2c22a5ee7c5bae6d799f4299d5135bcd1cc1761",
+  "routed_database_sha256": "aadd697fbd9bf0702c1893a9726f880aa9838e73a3ffacf5211f04d950aab4cd",
+  "source_files_verified": 80,
+  "setup_wns_ns": 0.11,
+  "hold_wns_ns": 0.024,
+  "hardware_tested": false,
+  "placement_seed": 1,
+  "project_file_sha256": "f9b0cba4c7748443229e5ae19ca6235e7c4daf62c26887456ca5880d1f4097f8",
+  "build_steps": [
+    "build_display_fix.tcl",
+    "fix_hold_display_fix.tcl",
+    "bitgen_display_fix.tcl",
+    "package_display_fix.py"
+  ]
+}
+Release: D:\FPGA\lab_ex5_i2s\release\workstation_v10_display_fix_20261028

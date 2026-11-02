@@ -1,0 +1,6 @@
+PASS settings CDC stable mailbox and frame-only capture
+verification/media_v9/tb_settings.v:18: $finish called at 6766000 (1ps)
+PASS preview pixel chain: 3 full frames, 4 banks, RGB332, focus, missing, RGB888 identity
+verification/media_v9/tb_preview_chain.v:56: $finish called at 50078640000 (1ps)
+PASS menu: full-frame glyph/hex/highlight/RGB/DE alignment and exact bypass
+verification/media_v9/tb_menu.v:46: $finish called at 24960760000 (1ps)

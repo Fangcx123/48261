@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-23T00:34:37.0627423+08:00",
+  "syn_opt": "passed",
+  "invocation": "Current TD GUI: Syn Opt",
+  "gui_observed_message": "PRJ-1410 : Run syn_1 success.",
+  "registered_display_sources": [
+    "video_transition_commit.v",
+    "video_effects_pipeline.v",
+    "osd_overlay_24.v",
+    "status_osd_overlay.v",
+    "promax_text_overlay.v",
+    "timestamp_osd.v"
+  ],
+  "unknown_module_or_blackbox_errors": [],
+  "gui_and_disk_project_synchronized": true,
+  "gui_reopen_required": false,
+  "project_sha256": "831b1208e7be5d959a2d924f972bf2c3d0c3b4c62e985f2c61a07a4d80082c3a",
+  "release_v7_sha256": "73ab095d59d39e6dd3f6214b0c41cccaef11c094da686018f0c1e456a0e7a224",
+  "release_v6_sha256": "542104e77b7e75519ee71cf4e04f0e0ee55bf2ce90e9b3558090d99d604cd239",
+  "release_artifacts_changed": [],
+  "note": "This GUI result supersedes the GUI synchronization limitation in audit.json. No RTL or released bit was modified. This rerun verifies synthesis only; physical implementation and bit generation were not rerun."
+}

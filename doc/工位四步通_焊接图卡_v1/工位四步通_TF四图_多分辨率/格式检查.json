@@ -1,0 +1,38 @@
+[
+  {
+    "file": "PIC1.BMP",
+    "width": 320,
+    "height": 240,
+    "bits_per_pixel": 24,
+    "compression": 0,
+    "file_bytes": 230454,
+    "sha256": "13d6efa4ee107a3d9c0b6fa7065df2b08d19be87a83738870125a9091bf4f83e"
+  },
+  {
+    "file": "PIC2.BMP",
+    "width": 640,
+    "height": 480,
+    "bits_per_pixel": 24,
+    "compression": 0,
+    "file_bytes": 921654,
+    "sha256": "905dabdbccf943edbdfb7f999a9ce06a395273938a0028d7a703e8f8fcff119c"
+  },
+  {
+    "file": "PIC3.BMP",
+    "width": 1024,
+    "height": 768,
+    "bits_per_pixel": 24,
+    "compression": 0,
+    "file_bytes": 2359350,
+    "sha256": "623995f0429591fa11390d86987ef41a98dad907c24c9fdad9699a1fa7a48844"
+  },
+  {
+    "file": "PIC4.BMP",
+    "width": 1920,
+    "height": 1080,
+    "bits_per_pixel": 24,
+    "compression": 0,
+    "file_bytes": 6220854,
+    "sha256": "320b5391bc85a34ab5819806fca9064167305b6c6562e5ebd2918cb4bad741fb"
+  }
+]

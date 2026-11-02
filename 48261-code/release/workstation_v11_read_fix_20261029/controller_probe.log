@@ -1,0 +1,20 @@
+init done t=131117
+t=131365 BAD return addr=256 data=b4a00101
+t=131366 BAD return addr=257 data=b4a00102
+t=131367 BAD return addr=258 data=b4a00103
+t=131368 BAD return addr=259 data=b4a00104
+t=131369 BAD return addr=260 data=b4a00105
+t=131370 BAD return addr=261 data=b4a00106
+t=131371 BAD return addr=262 data=b4a00107
+t=131372 BAD return addr=263 data=b4a00108
+read latency=11 cycles, returns=128 bad=128
+t=139805 BAD return addr=4096 data=b4a01001
+t=139806 BAD return addr=4097 data=b4a01002
+t=139807 BAD return addr=4098 data=b4a01003
+t=139808 BAD return addr=4099 data=b4a01004
+t=139809 BAD return addr=4100 data=b4a01005
+t=139810 BAD return addr=4101 data=b4a01006
+t=139811 BAD return addr=4102 data=b4a01007
+t=139812 BAD return addr=4103 data=b4a01008
+sustained 64 bursts back-to-back (no gating): returns=8192 bad=8192 refresh period=8255 cycles
+verification/workstation_v11/tb_ctrl_probe.v:53: $finish called at 3553104000 (1ps)

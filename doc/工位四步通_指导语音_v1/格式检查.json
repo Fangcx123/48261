@@ -1,0 +1,16 @@
+{
+  "file": "AUDIO.WAV",
+  "voice": "Microsoft Huihui Desktop（本地中文女声）",
+  "format": "RIFF/WAVE PCM format=1",
+  "sample_rate_hz": 48000,
+  "bits_per_sample": 16,
+  "channels": 1,
+  "sample_frames": 2332536,
+  "duration_seconds": 48.594,
+  "file_bytes": 4665116,
+  "peak_dbfs": -3.0,
+  "clipped_samples": 0,
+  "sha256": "dacd314b9b9bde7fdbd7bf61738d0c7c8d5b04395d5a96a3f16f18e68fa10008",
+  "rtl_modified": false,
+  "hardware_tested": false
+}

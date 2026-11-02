@@ -1,0 +1,32 @@
+{
+  "format": "raw sectors; NO filesystem",
+  "image": "D:\\FPGA\\lab_ex5_i2s\\doc\\convert\\lessons456_tf.img",
+  "bytes": 8388608,
+  "sha256": "b5420a6b2f5e79eb70cfeb4c512759cd3392bc1877920307d48942981c163cda",
+  "images": [
+    {
+      "display_number": 1,
+      "source": "D:\\FPGA\\lab_ex5_i2s\\doc\\convert\\output_bmp\\0.bmp",
+      "start_sector": 0,
+      "bytes": 921654
+    },
+    {
+      "display_number": 2,
+      "source": "D:\\FPGA\\lab_ex5_i2s\\doc\\convert\\output_bmp\\1.bmp",
+      "start_sector": 1801,
+      "bytes": 921654
+    },
+    {
+      "display_number": 3,
+      "source": "D:\\FPGA\\lab_ex5_i2s\\doc\\convert\\output_bmp\\3.bmp",
+      "start_sector": 3602,
+      "bytes": 921654
+    },
+    {
+      "display_number": 4,
+      "source": "D:\\FPGA\\lab_ex5_i2s\\doc\\convert\\output_bmp\\4.bmp",
+      "start_sector": 5403,
+      "bytes": 921654
+    }
+  ]
+}

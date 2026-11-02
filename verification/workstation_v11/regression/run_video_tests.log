@@ -1,0 +1,6 @@
+PASS captions: Chinese glyph frame, cue samples, pause, replay, gap, hidden/idle RGB and DE alignment
+verification/workstation_v10/tb_captions.v:41: $finish called at 12482460000 (1ps)
+PASS preview pixel chain: full-screen tiles/focus/missing, no old OSD/wave/captions, RGB888/DE alignment
+verification/workstation_v10/tb_preview_chain.v:35: $finish called at 6298450000 (1ps)
+PASS centered Chinese menu, bounds, highlight, glyphs, exact bypass and DE alignment
+verification/workstation_v10/tb_menu.v:27: $finish called at 6240530000 (1ps)

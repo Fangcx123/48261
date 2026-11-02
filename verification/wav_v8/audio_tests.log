@@ -1,0 +1,56 @@
+src/user_source/hdl_source/audio/fat32_wav_player.v:3: warning: timescale for fat32_wav_player inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+src/user_source/hdl_source/audio/pcm_async_fifo.v:4: warning: timescale for pcm_async_fifo inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+src/user_source/hdl_source/audio/wav_pcm_decoder.v:4: warning: timescale for wav_pcm_decoder inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+src/user_source/hdl_source/SD/fat32_volume_scanner.v:3: warning: timescale for fat32_volume_scanner inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+src/user_source/hdl_source/SD/fat32_file_streamer.v:3: warning: timescale for fat32_file_streamer inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+src/user_source/hdl_source/SD/sd_sector_adapter.v:3: warning: timescale for sd_sector_adapter inherited from another file.
+verification/wav_v8/tb_wav_player.v:1: ...: The inherited timescale is here.
+verification/wav_v8/tb_wav_player.v:84: warning: @* is sensitive to all 2 words in array 'meta'.
+PASS WAV reset: queued/in-flight stream cleared, refill restarts at first sample
+PASS WAV mono samples=1024 requests=238 maxlevel=4085 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16888520000 (1ps)
+PASS WAV stereo samples=20019 requests=381 maxlevel=3957 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16053040000 (1ps)
+PASS WAV short samples=93 requests=20 maxlevel=230 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 101040000 (1ps)
+PASS WAV chunks samples=20019 requests=387 maxlevel=3957 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16063440000 (1ps)
+PASS WAV missing samples=0 requests=3 maxlevel=0 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 36640000 (1ps)
+PASS WAV bad_rate samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/wav_v8/tb_wav_player.v:97: $finish called at 25080000 (1ps)
+PASS WAV bad_bits samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/wav_v8/tb_wav_player.v:97: $finish called at 25080000 (1ps)
+PASS WAV bad_magic samples=0 requests=4 maxlevel=0 silence=0 error=31
+verification/wav_v8/tb_wav_player.v:97: $finish called at 24760000 (1ps)
+PASS WAV bad_align samples=0 requests=4 maxlevel=0 silence=0 error=33
+verification/wav_v8/tb_wav_player.v:97: $finish called at 25080000 (1ps)
+PASS WAV bad_riff samples=0 requests=4 maxlevel=0 silence=0 error=32
+verification/wav_v8/tb_wav_player.v:97: $finish called at 24800000 (1ps)
+PASS WAV no_data samples=0 requests=5 maxlevel=0 silence=0 error=35
+verification/wav_v8/tb_wav_player.v:97: $finish called at 35040000 (1ps)
+PASS WAV odd_data samples=0 requests=4 maxlevel=0 silence=0 error=34
+verification/wav_v8/tb_wav_player.v:97: $finish called at 25160000 (1ps)
+PASS WAV truncated samples=0 requests=4 maxlevel=0 silence=0 error=32
+verification/wav_v8/tb_wav_player.v:97: $finish called at 24800000 (1ps)
+PASS WAV bad_fat samples=25 requests=9 maxlevel=727 silence=0 error=24
+verification/wav_v8/tb_wav_player.v:97: $finish called at 55800000 (1ps)
+PASS WAV loop_fat samples=64 requests=15 maxlevel=1456 silence=0 error=23
+verification/wav_v8/tb_wav_player.v:97: $finish called at 86960000 (1ps)
+PASS WAV short_sector samples=0 requests=4 maxlevel=233 silence=0 error=10
+verification/wav_v8/tb_wav_player.v:97: $finish called at 29880000 (1ps)
+PASS WAV timeout samples=4586 requests=39 maxlevel=4085 silence=7165 error=10
+verification/wav_v8/tb_wav_player.v:97: $finish called at 9436480000 (1ps)
+PASS WAV underflow samples=20019 requests=195 maxlevel=4085 silence=2178 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 17785040000 (1ps)
+PASS WAV superfloppy samples=20019 requests=194 maxlevel=4085 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16037840000 (1ps)
+PASS WAV activefat samples=20019 requests=381 maxlevel=3957 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16053040000 (1ps)
+PASS WAV spc8 samples=20019 requests=215 maxlevel=3957 silence=0 error=00
+verification/wav_v8/tb_wav_player.v:97: $finish called at 16042640000 (1ps)

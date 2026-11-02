@@ -1,0 +1,5 @@
+seed 2 errors=0  SWNS: -0.771ns, STNS: -43.435ns HWNS: -0.005ns, HTNS: -0.027ns 
+seed 3 errors=0  SWNS: -0.515ns, STNS: -1.487ns HWNS: -0.020ns, HTNS: -0.040ns 
+seed 4 errors=0  SWNS: -0.324ns, STNS: -1.949ns HWNS: -0.020ns, HTNS: -0.032ns 
+seed 5 errors=0  SWNS: 0.068ns, STNS: 0.000ns HWNS: -0.020ns, HTNS: -0.062ns 
+seed 6 errors=0  SWNS: -0.749ns, STNS: -14.935ns HWNS: -0.020ns, HTNS: -0.024ns 

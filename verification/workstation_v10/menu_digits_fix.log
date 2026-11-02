@@ -1,0 +1,2 @@
+PASS menu digits: all 256 percentage inputs and all 64 period values
+verification/workstation_v10/tb_menu_digits.v:25: $finish called at 64000 (1ps)
